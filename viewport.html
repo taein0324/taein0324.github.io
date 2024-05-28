@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>반응형 웹 만들어보기</title>
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <style>
+            @media screen and (max-width:767px){
+                body{
+                    background-color: skyblue;
+                }
+            }
+            @media screen and (min-width:768px) and (max-width:959px){
+                body{
+                    background-color: yellow;
+                }
+            }
+            @media screen and (min-width:960px){
+                body{
+                    background-color: purple;
+                }
+            }
+            @media print{
+                body{
+                    background-color: gold;
+                }
+            }
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body{
+                width: 960px;
+                margin: 0 auto;
+            }
+            #menu{
+                width: 300px;
+                float: right;
+            }
+            #content{
+                width: 660px;
+                float: left;
+            }
+            #li{
+                list-style: none;
+            }
+            @media screen and (max-width:767px){
+                body{
+                    width: auto;
+                }
+                #menu{
+                    width: auto;
+                    float: none;
+                    background-color: #ddd;
+                    width: 100px;
+                }
+                #content{
+                    width: auto;
+                    float: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <h3>강아지풀</h3>
+            <img src="img/foxtail.png">
+            <p>길가나 들에서 자라는 풀로써</p>
+            <p>고양이가 매우 좋아하는 물건이기에</p>
+            <p>한자로는 구미초라고 한다.</p>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>강아지풀 |</li>
+                <li>패랭이꽃 |</li>
+                <li>양귀비꽃 |</li>
+            </ul>
+        </div>
+    </body>
+</html>
